@@ -104,6 +104,8 @@
 /reference:Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll
 /reference:Library/ScriptAssemblies/UnityEditor.UI.dll
 /reference:Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll
+/reference:Assets/plugins/System.Data.SQLite.dll
+/reference:Assets/plugins/Plugins/SQLite/Mono.Data.SqliteClient.dll
 /reference:C:/Users/jessi/Desktop/BibQuiz/bib_quiz/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll
 /reference:C:/Users/jessi/Desktop/BibQuiz/bib_quiz/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll
 /reference:C:/Users/jessi/Desktop/BibQuiz/bib_quiz/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll
@@ -323,4 +325,7 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-Assets\scripts\comandos_basicos.cs
+Assets\scripts\BancoDeDados.cs
+Assets\scripts\cadastrar_perguntas.cs
+Assets\scripts\comandosBasicos.cs
+Assets\scripts\loginCadastro.cs

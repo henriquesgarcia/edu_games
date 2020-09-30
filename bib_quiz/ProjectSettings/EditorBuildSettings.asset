@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/criarquizperguntas.unity
     guid: 1ab659aa1c45a0f4f8369c4aae8aa36a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/criarquizassunto.unity
     guid: b83cf7835f12e334fa172ce1c451fcb1
   - enabled: 1

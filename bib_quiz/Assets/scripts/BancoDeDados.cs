@@ -17,7 +17,7 @@ public class BancoDeDados : MonoBehaviour
    
     void Start()
     {
-        Connection();
+       
 
 
     }
@@ -29,10 +29,12 @@ public class BancoDeDados : MonoBehaviour
       // string Drop = "DROP TABLE IF EXISTS quiz";
        string tableUser = "CREATE TABLE IF NOT EXISTS user( id INTEGER PRIMARY KEY AUTOINCREMENT, nome VARCHAR(70),user VARCHAR(10),senha PASSWORD );";
        string tableQuiz = "CREATE TABLE IF NOT EXISTS quiz( id INTEGER PRIMARY KEY AUTOINCREMENT,id_user INTEGER NOT NULL,perguntas VARCHAR(500) NOT NULL,alt_A VARCHAR(500),alt_B VARCHAR(500),alt_C VARCHAR(500),alt_D VARCHAR(500),resposta_correta VARCHAR(1),temas VARCHAR(500),FOREIGN KEY ('id_user') REFERENCES 'user'('id') );";
-        string tableAluno = "CREATE TABLE IF NOT EXISTS aluno ( id INTEGER PRIMARY KEY AUTOINCREMENT,nome VARCHAR(200))";
-       command.CommandText = tableUser;
-       command.CommandText = tableQuiz;
-       command.ExecuteNonQuery();
+        string querya = "CREATE TABLE IF NOT EXISTS aluno (ID INTEGER PRIMARY KEY   AUTOINCREMENT, nome varchar(100), user varchar(200), senha password (8)";
+        command.CommandText = tableUser;
+        command.CommandText = tableQuiz;
+        command.CommandText = querya;
+
+        command.ExecuteNonQuery();
 
     
     }

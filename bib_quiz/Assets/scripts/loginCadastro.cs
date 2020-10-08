@@ -27,23 +27,29 @@ public class loginCadastro : MonoBehaviour
     IDbConnection dbconn;
     private string conn;
     private IDataReader reader;
-
+    string sql;
+    string tglA;
     public void Start()
     {
         txt_error.SetActive(false);
         txt_user_senha.SetActive(false);
+
         conn = "URI=file:MySQLITEDB.db";
         dbconn = new SqliteConnection(conn);
         dbconn.Open();
+        tglA = PlayerPrefs.GetString("status");
+        UnityEngine.Debug.Log(tglA);
 
     }
 
-    public void Login(string nomeCena)
+    public void Login(string cena)
     {
 
         userL = InputUserL.text.ToString();
         senhaL = InputSenhaL.text.ToString();
-        
+       
+       
+
         try
         {
             if ((userL == "") && (senhaL == "") || (userL == "") || (senhaL == ""))
@@ -65,15 +71,19 @@ public class loginCadastro : MonoBehaviour
                     dbcmd.ExecuteNonQuery();
                     reader = dbcmd.ExecuteReader();
                     int count = 0;
+                    
                     while (reader.Read())
                     {
                         count++;
                     }
-                    if (count == 1)
+                    if (count == 1) 
                     {
-                        SceneManager.LoadScene(nomeCena);
+                        SceneManager.LoadScene(cena);
+
 
                     }
+                
+                   
                     if (count < 1)
                     {
                         txt_user_senha.SetActive(true);
@@ -96,14 +106,6 @@ public class loginCadastro : MonoBehaviour
     }
 
 
- /*   Function verificaUsuario(string campo_login)
-    {
-        int query = "SELECT count(login) FROM tabela WHERE login =" + campo_login;
+  
 
-        if (query < 1)
-        {
-            "Você não possui cadastro no sistema"
-        }
-    }
-*/
 }

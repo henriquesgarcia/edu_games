@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/cadAP.unity
+    guid: 975f8ceb2d7aa5e41bb76281e92859b2
+  - enabled: 1
     path: Assets/Scenes/titulo.unity
     guid: cee7509a62762c54f8bdc47c0515720c
   - enabled: 1
@@ -15,14 +18,38 @@ EditorBuildSettings:
     path: Assets/Scenes/menu_aluno.unity
     guid: 6ae75e1ca7f7d4248838da05ca086896
   - enabled: 1
+    path: Assets/Scenes/p_Tema.unity
+    guid: 2ccee28b07d3c794a83f4ab8188d1045
+  - enabled: 1
+    path: Assets/Scenes/listarAlunos.unity
+    guid: 600a2790e1fbf894bbb2d98520e524b9
+  - enabled: 1
     path: Assets/Scenes/listarQuiz.unity
     guid: df40c30e224552d40aade187caf21adc
-  - enabled: 1
-    path: Assets/Scenes/criarquizperguntas.unity
-    guid: 1ab659aa1c45a0f4f8369c4aae8aa36a
   - enabled: 0
-    path: Assets/Scenes/criarquizassunto.unity
-    guid: b83cf7835f12e334fa172ce1c451fcb1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/cadastroA.unity
+    guid: e1b80b8044d69194c8eca029da24efc4
+  - enabled: 1
+    path: Assets/Scenes/listarTurmas.unity
+    guid: aeea5c40d3420e8499509c5b4d2f726a
+  - enabled: 1
+    path: Assets/Scenes/cadTurma.unity
+    guid: 8ed976ba080fcfd44ae35db27733ae0a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/loginA.unity
+    guid: b7109734c15b95e4285b0415922112a3
+  - enabled: 1
+    path: Assets/Scenes/DetalhesTurma.unity
+    guid: 240c6a16abd0e414d9a2314d978cb4d4
+  - enabled: 1
+    path: Assets/Scenes/criarquiz.unity
+    guid: 39ca269c8fe19684d9e8886297ccc0f4
   - enabled: 1
     path: Assets/Scenes/cadastro.unity
     guid: da8c3a418be9bf0439114c8d516c73b6

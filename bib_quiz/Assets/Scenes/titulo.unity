@@ -1751,6 +1751,8 @@ MonoBehaviour:
   Inputnome: {fileID: 0}
   Inputuser: {fileID: 0}
   Inputsenha: {fileID: 0}
+  toggleAluno: {fileID: 0}
+  toggleProf: {fileID: 0}
 --- !u!1 &2044623534
 GameObject:
   m_ObjectHideFlags: 0

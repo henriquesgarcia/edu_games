@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/cadAP.unity
+- path: Assets/Scenes/jogo.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

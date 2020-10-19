@@ -8,6 +8,7 @@ public class MoveOfsset : MonoBehaviour
     private Material materialAtual;
     public float velocidade;
     private float offset;
+   
     // Start is called before the first frame update
     void Start()
     {

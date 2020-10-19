@@ -13,76 +13,74 @@ using System.Data.SQLite;
 using UnityEngine.SceneManagement;
 using System.Threading;
 using System;
+using System.Collections.Specialized;
 
 public class PlayerControll : MonoBehaviour
 {
-
-    private bool jump = false;
-    public float moveForce = 20;
-    public float maxSpeed = 10;
-    public float jumpForce = 700;
-    public Transform groundCheck;
-
-    private bool grounded = false;
-    private float hForce = 1;
-    private bool spinDash = false;
-    private Rigidbody2D rb2d;
-    private bool estaVivo = true;
+    public float speed = 0f;
+    public bool isGrounded = true;
+    public float jumpForce = 650f;
     private Animator anim;
+    private Rigidbody2D rig;
 
-    // Start is called before the first frame update
+    public LayerMask LayerGround;
+    public Transform checkGround;
+    public string isGroundBool = "eChao";
+
+
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        MovimentaPlayer();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
-        anim.SetBool("Onground", grounded);
-
-        if (grounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            anim.SetBool("jump", false);
+            Jump();
         }
-       
-        
-    
+        if (Input.touchCount > 0)
+        {
+            Jump();
+        }
     }
-
+    private void MovimentaPlayer()
+    {
+        transform.Translate(new Vector3(speed, 0, 0));
+    }
 
     private void FixedUpdate()
     {
-        if (estaVivo)
-        {
-            anim.SetFloat("speed", rb2d.velocity.x);
-            rb2d.AddForce(Vector2.right * hForce * moveForce);
+        transform.Translate(new Vector3(speed, 0, 0));
 
-            if (rb2d.velocity.x > maxSpeed)
-                rb2d.velocity = new Vector2(Mathf.Sign(rb2d.velocity.x) * maxSpeed, rb2d.velocity.y);
+        if (Physics2D.OverlapCircle(checkGround.transform.position, 0.2f, LayerGround)) {
+
+            anim.SetBool(isGroundBool, true);
+            isGrounded = true;
         }
-        if (jump)
+        else
         {
-            anim.SetBool("jump", true);
-            rb2d.AddForce(new Vector2(0, jumpForce));
-            jump = false;
-        
+            anim.SetBool(isGroundBool, false);
+            isGrounded = false;
         }
     }
 
     public void Jump()
     {
-        if (grounded)
+     
+        
+
+            if (isGrounded)
         {
-            jump = true;
+            rig.velocity = Vector2.zero;
+            rig.AddForce(new Vector2(0, jumpForce));
         }
-
     }
-  
-
-
-
+    void OnTriggerEnter2D()
+    {
+        UnityEngine.Debug.Log("Bateu");
+    }
 }
 

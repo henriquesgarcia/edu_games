@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7624358162933227116}
   - component: {fileID: 1955597009583296133}
   - component: {fileID: 1042630607}
+  - component: {fileID: 996207045}
+  - component: {fileID: 996207044}
   m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
@@ -85,14 +87,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
-  - {fileID: 8082254624870285211, guid: 0fa3611177ae42244a172e323b8e3e1d, type: 3}
-  - {fileID: 4790037778582594450, guid: 7b3d17633b225de4592154430c886393, type: 3}
-  - {fileID: 3111363750241352532, guid: e436f56916da4f04792fabb444e4bb47, type: 3}
-  - {fileID: 6551281979846950264, guid: 42d69ca7ecc4988498662d4d83735ca0, type: 3}
-  - {fileID: 9013553033516685053, guid: 9a7999fca958c5d4492731cd05e7cdbd, type: 3}
+  - {fileID: 9071765393756005222, guid: 0fa3611177ae42244a172e323b8e3e1d, type: 3}
+  - {fileID: 548381585703478343, guid: e436f56916da4f04792fabb444e4bb47, type: 3}
+  - {fileID: 8700797327156015101, guid: 42d69ca7ecc4988498662d4d83735ca0, type: 3}
+  - {fileID: 6080563160430992794, guid: 7b3d17633b225de4592154430c886393, type: 3}
+  - {fileID: 686689658181631300, guid: 36e7356cefd166b4eb128f24666e4112, type: 3}
   numberOfObstacles: {x: 1, y: 2}
   newObstacles: []
-  speed: -2
+  speed: -1.5
+  rateSpawn: 1.5
+  currentTime: 0
+--- !u!114 &996207045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7624358162933227154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f3ce4e7319936438a4b7ab5cbb457b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 6595340234719276443, guid: 9bf4d91b2b9ad304398199fd84f37d2a, type: 3}
+  - {fileID: 6595340234719276443, guid: 9bf4d91b2b9ad304398199fd84f37d2a, type: 3}
+  numberOfObstacles: {x: 1, y: 2}
+  newObstacles: []
+  speed: -1.5
+  rateSpawn: 2
+  currentTime: 0
+--- !u!114 &996207044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7624358162933227154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f3ce4e7319936438a4b7ab5cbb457b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 686689658181631300, guid: 36e7356cefd166b4eb128f24666e4112, type: 3}
+  - {fileID: 686689658181631300, guid: 36e7356cefd166b4eb128f24666e4112, type: 3}
+  numberOfObstacles: {x: 1, y: 4}
+  newObstacles: []
+  speed: -3
+  rateSpawn: 1
+  currentTime: 0
 --- !u!1 &7624358163485578467
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7624358163485578467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.73, y: -4.12, z: 1.6230468}
+  m_LocalPosition: {x: 0.73, y: -4.12, z: 2.81}
   m_LocalScale: {x: 0.48856986, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 7624358162933227117}

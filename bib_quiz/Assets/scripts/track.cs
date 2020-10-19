@@ -13,9 +13,14 @@ public class track : MonoBehaviour
     public List<GameObject> newObstacles;
     public float speed;
     private float x;
+    private int posicao;
+    private float y;
+    public float rateSpawn;
+    public float currentTime;
     // Start is called before the first frame update
     void Start()
     {
+
         int newNumberOfObstacles = (int)UnityEngine.Random.Range(numberOfObstacles.x,numberOfObstacles.y);
         for (int i = 0; i < newNumberOfObstacles; i++)
         {
@@ -32,7 +37,7 @@ public class track : MonoBehaviour
         x += speed * Time.deltaTime;
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
 
-        if(x<= -8)
+        if(x<= -17)
         {
             Destroy(transform.gameObject);
         }
@@ -45,7 +50,7 @@ public class track : MonoBehaviour
         {
             float posZmin = (0.37f / newObstacles.Count) + (0.37f / newObstacles.Count) * i;
             float posZmax = (0.37f / newObstacles.Count) + (0.37f / newObstacles.Count) * i + 1;
-            newObstacles[i].transform.localPosition = new Vector3(-1, -3, UnityEngine.Random.Range(posZmin, posZmax));
+            newObstacles[i].transform.localPosition = new Vector3(transform.position.x,-3.33f, UnityEngine.Random.Range(posZmin, posZmax));
             newObstacles[i].SetActive(true);
         }
     }

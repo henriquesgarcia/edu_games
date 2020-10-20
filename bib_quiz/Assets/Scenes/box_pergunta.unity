@@ -441,7 +441,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 356078849}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016186116}
+        m_MethodName: resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: A
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &356078849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +571,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 535967874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016186116}
+        m_MethodName: resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: B
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &535967874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,6 +1237,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501054104}
   m_CullTransparentMesh: 0
+--- !u!1 &1523025359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523025360}
+  - component: {fileID: 1523025362}
+  - component: {fileID: 1523025361}
+  m_Layer: 5
+  m_Name: txt_info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1523025360
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523025359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2044623538}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -13, y: -414.5}
+  m_SizeDelta: {x: 402.61243, y: 58.945312}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1523025361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523025359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8cafe5f688b1ea4499f1453feab3b82a, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Respondendo 1 de 3 quest\xF5es"
+--- !u!222 &1523025362
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523025359}
+  m_CullTransparentMesh: 0
 --- !u!1 &1658617561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,8 +1570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016186113}
   - component: {fileID: 2016186112}
-  - component: {fileID: 2016186115}
-  - component: {fileID: 2016186114}
+  - component: {fileID: 2016186116}
   m_Layer: 0
   m_Name: _GC
   m_TagString: Untagged
@@ -1505,7 +1604,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2016186114
+--- !u!114 &2016186116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1514,38 +1613,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 2016186111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22ed95c9088551a4aaa7cea218011a56, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bf19e433c3e8d14f87aba49ab88c705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputUserL: {fileID: 0}
-  InputSenhaL: {fileID: 0}
-  txt_error: {fileID: 685066064}
-  txt_user_senha: {fileID: 1078493772}
---- !u!114 &2016186115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016186111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7574c1c469feccb409f48e25428c72cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InputTema: {fileID: 0}
-  InputPergunta: {fileID: 0}
-  InputAltA: {fileID: 0}
-  InputAltB: {fileID: 0}
-  InputAltC: {fileID: 0}
-  InputAltD: {fileID: 0}
-  InputResCorreta: {fileID: 0}
-  Inputnome: {fileID: 0}
-  Inputuser: {fileID: 0}
-  Inputsenha: {fileID: 0}
-  InputDesc: {fileID: 0}
-  InputDisc: {fileID: 0}
-  txt_error: {fileID: 0}
+  pergunta: {fileID: 547106876}
+  respostaA: {fileID: 339359210}
+  respostaB: {fileID: 984850952}
+  respostaC: {fileID: 1498889567}
+  infoRespostas: {fileID: 1523025361}
+  perguntas:
+  - Qual o valor de 2+ 2?
+  - Qual o  resultado de 10*0?
+  - "Quanto \xE9 5 + 5?"
+  alternativaA:
+  - 4
+  - 0
+  - 10
+  alternativaB:
+  - 2
+  - 8
+  - 1
+  alternativaC:
+  - 7
+  - 3
+  - 5
+  corretas:
+  - 4
+  - 0
+  - 10
+  tempoText: {fileID: 1501054106}
 --- !u!1 &2023350056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1723,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2023350059}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016186116}
+        m_MethodName: resposta
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: C
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2023350059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1765,6 +1872,7 @@ RectTransform:
   - {fileID: 535967872}
   - {fileID: 2023350057}
   - {fileID: 1501054105}
+  - {fileID: 1523025360}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

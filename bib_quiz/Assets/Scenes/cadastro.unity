@@ -924,7 +924,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1130395833}
-        m_MethodName: CadastroUser
+        m_MethodName: CadastroUserP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1130,8 +1130,9 @@ MonoBehaviour:
   Inputnome: {fileID: 179901341}
   Inputuser: {fileID: 1696778649}
   Inputsenha: {fileID: 285965987}
-  toggleAluno: {fileID: 0}
-  toggleProf: {fileID: 0}
+  InputDesc: {fileID: 0}
+  InputDisc: {fileID: 0}
+  txt_error: {fileID: 0}
 --- !u!1 &1265135792
 GameObject:
   m_ObjectHideFlags: 0

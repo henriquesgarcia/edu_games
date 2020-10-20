@@ -38,12 +38,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cadTurma.unity
     guid: 8ed976ba080fcfd44ae35db27733ae0a
+  - enabled: 1
+    path: Assets/Scenes/jogo.unity
+    guid: 2b3bb2ce4e2fc4d40b8d2df0f24ac30f
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/box_pergunta.unity
+    guid: 5f431f84518f7c340a672e7d69e41a0c
+  - enabled: 1
     path: Assets/Scenes/loginA.unity
     guid: b7109734c15b95e4285b0415922112a3
+  - enabled: 1
+    path: Assets/Scenes/detalhes_alunos.unity
+    guid: f60344c8a2a7a334aa037c118deeacaa
+  - enabled: 1
+    path: Assets/Scenes/notaJogo.unity
+    guid: b430c85c0a8e9d74c9c138a339837f84
   - enabled: 1
     path: Assets/Scenes/DetalhesTurma.unity
     guid: 240c6a16abd0e414d9a2314d978cb4d4

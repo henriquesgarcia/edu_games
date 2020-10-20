@@ -100,7 +100,7 @@ public class cadastrar_perguntas : MonoBehaviour
         UnityEngine.Debug.Log("Stablishing connection to: " + conn);
         dbconn = new SqliteConnection(conn);
         dbconn.Open();
-        txt_error.SetActive(false);
+        // txt_error.SetActive(false);
 
 
     }
@@ -274,7 +274,6 @@ public class cadastrar_perguntas : MonoBehaviour
             txt_error.SetActive(false);
             SceneManager.LoadScene("cadTurma");
         }
-        UnityEngine.Debug.Log(cronometro);
        
 
 

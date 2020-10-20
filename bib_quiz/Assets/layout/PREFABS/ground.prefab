@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7624358162933227116}
   - component: {fileID: 1955597009583296133}
   - component: {fileID: 1042630607}
-  - component: {fileID: 996207045}
-  - component: {fileID: 996207044}
+  - component: {fileID: 856538421}
+  - component: {fileID: 856538422}
   m_Layer: 8
   m_Name: ground
   m_TagString: Untagged
@@ -91,13 +91,12 @@ MonoBehaviour:
   - {fileID: 548381585703478343, guid: e436f56916da4f04792fabb444e4bb47, type: 3}
   - {fileID: 8700797327156015101, guid: 42d69ca7ecc4988498662d4d83735ca0, type: 3}
   - {fileID: 6080563160430992794, guid: 7b3d17633b225de4592154430c886393, type: 3}
-  - {fileID: 686689658181631300, guid: 36e7356cefd166b4eb128f24666e4112, type: 3}
   numberOfObstacles: {x: 1, y: 2}
   newObstacles: []
   speed: -1.5
-  rateSpawn: 1.5
+  rateSpawn: 3
   currentTime: 0
---- !u!114 &996207045
+--- !u!114 &856538421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,18 +105,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7624358162933227154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91f3ce4e7319936438a4b7ab5cbb457b, type: 3}
+  m_Script: {fileID: 11500000, guid: 68d8e6835627e574b8c6641f9ca94134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
-  - {fileID: 6595340234719276443, guid: 9bf4d91b2b9ad304398199fd84f37d2a, type: 3}
-  - {fileID: 6595340234719276443, guid: 9bf4d91b2b9ad304398199fd84f37d2a, type: 3}
-  numberOfObstacles: {x: 1, y: 2}
+  - {fileID: 2392786269678081485, guid: 16dcd90ce26651c46ab4318bddd75e20, type: 3}
+  numberOfObstacles: {x: 1, y: 1}
   newObstacles: []
-  speed: -1.5
+  speed: 1
   rateSpawn: 2
   currentTime: 0
---- !u!114 &996207044
+--- !u!114 &856538422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,15 +124,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7624358162933227154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91f3ce4e7319936438a4b7ab5cbb457b, type: 3}
+  m_Script: {fileID: 11500000, guid: ac5b281ab41af0843ba6291fea0e6e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 686689658181631300, guid: 36e7356cefd166b4eb128f24666e4112, type: 3}
   - {fileID: 686689658181631300, guid: 36e7356cefd166b4eb128f24666e4112, type: 3}
-  numberOfObstacles: {x: 1, y: 4}
+  numberOfObstacles: {x: 1, y: 2}
   newObstacles: []
-  speed: -3
+  speed: -1
   rateSpawn: 1
   currentTime: 0
 --- !u!1 &7624358163485578467
